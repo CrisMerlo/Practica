@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+</head>
+<body>
+    <h1>Cristian Merlo</h1>
+    <!-- Para ingresar una imagen se puede hacer de 2 formas, 1 es poniendo la imagen en la misma carpeta que el codigo y solo poner ./ y el nombre o el formato que sea el archivo
+     y la otra es poniendo el link de la imagen, en las 2 opciones va adentro de src=. alt= se pone una descripsion de la imagen de que es la foto o de que quien -->
+    <img src="./yugi.jpg" alt="Una foto que me gusta de yu gi oh">
+
+    <!--  ul se utiliza para hacer texto con . adelante y ol se utiliza para enumerar ej 1. 2. 3. -->
+    <ul>
+        <li>Edad: 24</li>
+        <li>email: crismerlo2010@gmail.com</li>
+    </ul>
+    <p>
+        Soy una persona que esta queriendo aprender a programar Front End
+    </p>
+    <a target="_blank" href="https://www.instagram.com/cri2merl0/"> 
+        <img src="./descarga.jpg" alt="">
+    </a>
+    <h2>
+        Formularios
+    </h2>
+    <form>
+        <!-- <br> Solo mueve el texto para abajo, cuando usemos css se va a dejar de usar -->
+
+        <!-- Para que el usuario ingrese texto usar el type: text -->
+        <label for="nombre">Ingrese su nombre</label>
+        <br><br>
+        <input id="nombre" type="text" placeholder="Ej: Maria">
+        <br><br>
+        <label for="apellido">Ingrese apellido</label>
+        <br><br>
+        <input id="apellido" type="text" placeholder="Ej: Perez">
+        <br><br>
+
+        <!-- Para que el usario ingrese solo numeros usar el type:number -->
+        <label for="num_tel">Ingrese un numero telefonico para contactar</label>
+        <br><br>
+        <input id="num_tel" type="number" placeholder="Ej: 11 23452345">
+        <br><br>
+
+        <!-- Para que el usuario ingrese un mail se usa el type:email -->
+        <label for="email">Ingrese su email</label>
+        <br><br>
+        <input type="email" id="email" placeholder="Ej: MariaPerez213@gmail.com">
+        <br><br>
+
+        <!-- Para que el usuario ingrese una contraseña se usa el type: password -->
+        <label for="pass">Ingrese sus contraseña</label>
+        <br><br>
+        <input type="password" id="pass">
+        <br><br>
+
+        <!-- type="checkbox" es para hacer que seleccione el usuario, puede elegir mas de 1 -->
+        <label for="chocolate">Chocolate</label>
+        <input type="checkbox" id="chocolate">
+
+        <label for="tramontana">Tramontana</label>
+        <input type="checkbox" id="tramontana">
+
+        <label for="granizado">Granizado</label>
+        <input type="checkbox" id="granizado">
+
+        <h3>Elegi un horario</h3>
+
+        <!-- type="radio" se usa para hacer un check donde solo se pueda aceptar 1 eleccion -->
+        <!-- lo que va adentro del "name" tiene que ser el mismo para los 3, asi el navegador sabe que  estan juntos, solo puede elegir 1 de las opc -->
+        <label for="horario" id="manana">Mañana</label>
+        <input type="radio" name="horarios_eleccion" id="horarios">
+        
+        
+        <label for="horario" id="tarde">Tarde</label>
+        <input type="radio" name="horarios_eleccion" id="horarios">
+        
+        <label for="horario" id="noche">Noche</label>
+        <input type="radio" name="horarios_eleccion" id="noche">
+        
+        <!-- otra forma de hacer una lista de seleccion donde no tengas que escribir tanto codigo como con type radio es con select -->
+        <h3>Elije tu provincia</h3>
+
+        <!-- Crea una barra donde podes seleccion 1 de las opc de las que pusiste en option -->
+        <select>
+            <option value="buenos_aires">Buenos Aires</option>
+            <option value="salta">Salta</option>
+            <option value="chubut">Chubut</option>
+            <option value="rio_negro">Rio Negro</option>
+        </select>
+        <br><br>
+
+        <!-- Crear un cuadro para escribir texto -->
+        <label for="usted">Cuentanos ¿que necesita de nosotros?</label>
+        <br><br>
+        <textarea id="usted" cols="60" rows="10"></textarea>
+        <br><br>
+
+        <!-- Para crear un boton tenemos 2 formas, 1 con button y la otra con  <input type="submit"> -->
+        <button type="submit">Enviar</button>
+    </form>
+    <table>
+        <!-- Forma de hacer una tabla -->
+        <h2>Horarios</h2>
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+            <th>Domingo</th>
+        </tr>
+        <tr>
+            <td>9hs</td>
+            <td>9hs</td>
+            <td>9hs</td>
+            <td>9hs</td>
+            <td>9hs</td>
+            <td>9hs</td>
+            <td>9hs</td>
+        </tr>
+        <tr>
+            <td>8hs</td>
+            <td>8hs</td>
+            <td>8hs</td>
+            <td>8hs</td>
+            <td>8hs</td>
+            <td>8hs</td>
+            <td>8hs</td>
+        </tr>
+    </table>
+</body>
+</html>
